@@ -2,31 +2,63 @@
 body {
     font-family: "BlexMono Nerd Font", monospace;
     background-color: blanchedalmond;
+    width: 800px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: right bottom;
 }
 
 h1{
-    text-align: center;
     text-transform: uppercase;
     color:lightskyblue;
-    font-size: 40px;
+    font-size: 67px;
+    float: right;
 }
 
 h2{
-    color: lightblue;
+    color:deeppink;
     text-align: justify;
     text-decoration: underline;
 }
 
 ul{
-    color:lightblue;
+    color:deeppink;
 }
 
 a{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: blue;
+    color: deeppink;
     text-decoration: none;
 }
 
 li{
     font-size: 20px;
+}
+
+header, nav, main, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.foto {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.secao {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
