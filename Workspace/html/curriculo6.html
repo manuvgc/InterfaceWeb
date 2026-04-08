@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Manuela Pereira</title>
+    <style>
+        :root {
+            --cor-principal: #2c3e50;
+            --cor-destaque: #3498db;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "BlexMono Nerd Font", monospace;
+            font-size: 1rem;
+            line-height: 1.6;
+            background-image: url('Imagens_curriculo/bg.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 100vh;
+            padding: 2vw;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 90vw;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 2.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem); /* Ajusta entre 2rem e 3.5rem baseada na largura */
+            color: var(--cor-principal);
+            margin-bottom: 1rem;
+        }
+
+        .foto {
+            width: 25vw;
+            max-width: 180px;
+            min-width: 120px;
+            border-radius: 15%;
+            border: 4px solid var(--cor-destaque);
+            transition: transform 0.3s ease;
+        }
+
+        .foto:hover {
+            transform: scale(1.05);
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            background: var(--cor-principal);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            padding: 0.5em 1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--cor-destaque);
+        }
+
+        .secao {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--cor-destaque);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .horizontal-lista {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .horizontal-lista li {
+            background: #f8f9fa;
+            padding: 0.8rem 1.2rem;
+            border-radius: 0.4rem;
+            font-size: 0.95rem;
+            flex: 1 1 200px;
+        }
+
+        #links a {
+            color: var(--cor-destaque);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #666;
+            padding: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Manuela Pereira</h1>
+            <img class="foto" src="imagens_curriculo/eu.jpg" alt="Foto Manuela">
+        </header>
+
+        <nav>
+            <a href="#info">Informações</a>
+            <a href="#contato">Contato</a>
+            <a href="#formacao">Formação</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#links">Links</a>
+        </nav>
+
+        <main>
+            <section id="info" class="secao">
+                <h2>Informações Pessoais</h2>
+                <ul class="horizontal-lista">
+                    <li><strong>Nome:</strong> Manuela Pereira</li>
+                    <li><strong>Idade:</strong> 19 anos</li>
+                    <li><strong>Residência:</strong> Guarapuava - PR</li>
+                    <li><strong>Naturalidade:</strong> Cascavel - PR</li>
+                </ul>
+            </section>
+
+            <section id="contato" class="secao">
+                <h2>Contato</h2>
+                <ul class="horizontal-lista">
+                    <li><strong>Celular:</strong> (42) 99119-8080</li>
+                    <li><strong>Email:</strong> unimanuela@proton.me</li>
+                </ul>
+            </section>
+
+            <section id="formacao" class="secao">
+                <h2>Formação</h2>
+                <ul class="horizontal-lista">
+                    <li>Ensino Médio - Colégio Lobo (2021-2023)</li>
+                    <li>Bacharelado em Ciência da Computação - Unicentro (2024-Presente)</li>
+                </ul>
+            </section>
+
+            <section id="habilidades" class="secao">
+                <h2>Habilidades e Competências</h2>
+                <ul class="horizontal-lista">
+                    <li>Programação em C++</li>
+                    <li>Top 200 mundial em Pokémon VGC</li>
+                    <li>Toco guitarra</li>
+                    <li>Coleciono bichos de pelúcia</li>
+                    <li>Entusiasta de canetas</li>
+                    <li>Amo coelhos</li>
+                </ul>
+            </section>
+
+            <section id="links" class="secao">
+                <h2>Links</h2>
+                <ul class="horizontal-lista">
+                    <li><a href="https://github.com/manuvgc" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/manuela-pereira-b10979329/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright 2026 - Manuela Pereira</p>
+        </footer>
+    </div>
+
+</body>
+</html>
