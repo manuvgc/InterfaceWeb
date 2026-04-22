@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <main class="container">
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Personal Data</legend>
+                <div class="row">
+                    <label class="field">
+                        <i class="fa-regular fa-id-badge"></i>
+                        <input type="text" name="fullname" placeholder="Full Name" required>
+                    </label>
+                    <label class="field">
+                        <i class="fa-regular fa-address-card"></i>
+                        <input type="text" name="cpf" placeholder="CPF">
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="field">
+                        <i class="fa-regular fa-calendar"></i>
+                        <input type="date" name="birthdate">
+                    </label>
+                    <label class="field">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" name="phone" placeholder="Phone Number">
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password">
+                    </label>
+                    <label class="field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="confirm_password" placeholder="Password">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Address</legend>
+                <div class="row">
+                    <label class="field">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <input type="text" name="zip" placeholder="CEP">
+                    </label>
+                    <label class="field">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" name="street" placeholder="Street">
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="field">
+                        <i class="fa-solid fa-house"></i>
+                        <input type="text" name="house_info" placeholder="House/Apartment">
+                    </label>
+                    <label class="field">
+                        <i class="fa-solid fa-city"></i>
+                        <input type="text" name="city" placeholder="City">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Professional Data</legend>
+                <div class="row">
+                    <label class="field">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <input type="text" name="company" placeholder="Company">
+                    </label>
+                    <label class="field">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <input type="text" name="job_title" placeholder="Job Title">
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="field">
+                        <i class="fa-solid fa-user-tag"></i>
+                        <input type="text" name="specialty" placeholder="Specialty">
+                    </label>
+                    <label class="field">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <select name="linkedin_select">
+                            <option value="" disabled selected>LinkedIn URL</option>
+                            <option value="url">linkedin.com/in/perfil</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn-submit">Create Account</button>
+        </form>
+    </main>
+
+</body>
+</html>

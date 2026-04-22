@@ -1,0 +1,84 @@
+:root {
+    --primary-blue: #2563eb;
+    --border-color: #e5e7eb;
+    --text-color: #4b5563;
+}
+
+body {
+    background-color: #f8fafc;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    width: 90%;
+    max-width: 600px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #111827;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    transition: border-color 0.2s;
+    cursor: text;
+}
+
+.field:focus-within {
+    border-color: var(--primary-blue);
+}
+
+.field i {
+    color: var(--primary-blue);
+    width: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.field input, .field select {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+}
